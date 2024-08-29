@@ -13,7 +13,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBOutlet var collectionView: UICollectionView!
     
-    var listaDeNomes = ["Miguel", "Luiz", "André"]
+    var listaDeNomes = ["Miguel", "Manuella", "André"]
     
     
     override func viewDidLoad() {
@@ -23,6 +23,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.delegate = self
         collectionView.backgroundColor = .black
         
+    }
+    
+    func AdicionarNomes() {
+        listaDeNomes.append("Laura")
+        listaDeNomes.append("José")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
